@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<extension key="hu.es-progress.change-payment-method" type="module">
+  <file>change_payment_method</file>
+  <name>Change contribution payment method</name>
+  <description>Adds an option to the change a contributions payment method on the form</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Sandor Semsey</author>
+    <email>sandor.semsey@es-progress.hu</email>
+  </maintainer>
+  <releaseDate>2020-01-15</releaseDate>
+  <version>1.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>5.18</ver>
+    <ver>5.20</ver>
+  </compatibility>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/ChangePaymentMethod</namespace>
+  </civix>
+</extension>
