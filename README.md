@@ -40,7 +40,7 @@ cv en change_payment_method
 
 ## Usage
 
-On the edit contribution form you can find the new field
+On the edit contribution form you can find the new field.
 
 ## Known Issues
 
