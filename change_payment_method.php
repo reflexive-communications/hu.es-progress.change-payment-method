@@ -1,14 +1,14 @@
 <?php
 
 require_once 'change_payment_method.civix.php';
-use CRM_ChangePaymentMethod_ExtensionUtil as E;
 
 /**
  * Implements hook_civicrm_config().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_config/
  */
-function change_payment_method_civicrm_config(&$config) {
+function change_payment_method_civicrm_config(&$config)
+{
   _change_payment_method_civix_civicrm_config($config);
 }
 
@@ -17,7 +17,8 @@ function change_payment_method_civicrm_config(&$config) {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_xmlMenu
  */
-function change_payment_method_civicrm_xmlMenu(&$files) {
+function change_payment_method_civicrm_xmlMenu(&$files)
+{
   _change_payment_method_civix_civicrm_xmlMenu($files);
 }
 
@@ -26,7 +27,8 @@ function change_payment_method_civicrm_xmlMenu(&$files) {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_install
  */
-function change_payment_method_civicrm_install() {
+function change_payment_method_civicrm_install()
+{
   _change_payment_method_civix_civicrm_install();
 }
 
@@ -35,7 +37,8 @@ function change_payment_method_civicrm_install() {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_postInstall
  */
-function change_payment_method_civicrm_postInstall() {
+function change_payment_method_civicrm_postInstall()
+{
   _change_payment_method_civix_civicrm_postInstall();
 }
 
@@ -44,7 +47,8 @@ function change_payment_method_civicrm_postInstall() {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_uninstall
  */
-function change_payment_method_civicrm_uninstall() {
+function change_payment_method_civicrm_uninstall()
+{
   _change_payment_method_civix_civicrm_uninstall();
 }
 
@@ -53,7 +57,8 @@ function change_payment_method_civicrm_uninstall() {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_enable
  */
-function change_payment_method_civicrm_enable() {
+function change_payment_method_civicrm_enable()
+{
   _change_payment_method_civix_civicrm_enable();
 }
 
@@ -62,7 +67,8 @@ function change_payment_method_civicrm_enable() {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_disable
  */
-function change_payment_method_civicrm_disable() {
+function change_payment_method_civicrm_disable()
+{
   _change_payment_method_civix_civicrm_disable();
 }
 
@@ -71,7 +77,8 @@ function change_payment_method_civicrm_disable() {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_upgrade
  */
-function change_payment_method_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
+function change_payment_method_civicrm_upgrade($op, CRM_Queue_Queue $queue = null)
+{
   return _change_payment_method_civix_civicrm_upgrade($op, $queue);
 }
 
@@ -83,7 +90,8 @@ function change_payment_method_civicrm_upgrade($op, CRM_Queue_Queue $queue = NUL
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_managed
  */
-function change_payment_method_civicrm_managed(&$entities) {
+function change_payment_method_civicrm_managed(&$entities)
+{
   _change_payment_method_civix_civicrm_managed($entities);
 }
 
@@ -96,7 +104,8 @@ function change_payment_method_civicrm_managed(&$entities) {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_caseTypes
  */
-function change_payment_method_civicrm_caseTypes(&$caseTypes) {
+function change_payment_method_civicrm_caseTypes(&$caseTypes)
+{
   _change_payment_method_civix_civicrm_caseTypes($caseTypes);
 }
 
@@ -110,7 +119,8 @@ function change_payment_method_civicrm_caseTypes(&$caseTypes) {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_angularModules
  */
-function change_payment_method_civicrm_angularModules(&$angularModules) {
+function change_payment_method_civicrm_angularModules(&$angularModules)
+{
   _change_payment_method_civix_civicrm_angularModules($angularModules);
 }
 
@@ -119,7 +129,8 @@ function change_payment_method_civicrm_angularModules(&$angularModules) {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterSettingsFolders
  */
-function change_payment_method_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
+function change_payment_method_civicrm_alterSettingsFolders(&$metaDataFolders = null)
+{
   _change_payment_method_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
 
@@ -130,13 +141,30 @@ function change_payment_method_civicrm_alterSettingsFolders(&$metaDataFolders = 
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_entityTypes
  */
-function change_payment_method_civicrm_entityTypes(&$entityTypes) {
+function change_payment_method_civicrm_entityTypes(&$entityTypes)
+{
   _change_payment_method_civix_civicrm_entityTypes($entityTypes);
 }
 
 /**
  * Implements hook_civicrm_thems().
  */
-function change_payment_method_civicrm_themes(&$themes) {
+function change_payment_method_civicrm_themes(&$themes)
+{
   _change_payment_method_civix_civicrm_themes($themes);
+}
+
+/**
+ * Implements hook_civicrm_buildForm
+ *
+ * @param $formName
+ * @param $form
+ */
+function change_payment_method_civicrm_buildForm($formName, &$form)
+{
+  // Process only if form is contribution and form id is set (eg. when editing)
+  if ($formName != 'CRM_Contribute_Form_Contribution' || $form->getVar('_id') == null) {
+    return;
+  };
+  $form->assign("show_payment_method", true);
 }

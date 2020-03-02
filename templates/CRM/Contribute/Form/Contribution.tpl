@@ -154,10 +154,12 @@
       </tr>
     {/if}
     {********************************************************************************************************************}
+    {if $show_payment_method}
     <tr class="crm-contribution-form-block-payment_instrument_id">
       <td class="label">{$form.payment_instrument_id.label}</td>
       <td>{$form.payment_instrument_id.html}</td>
     </tr>
+    {/if}
     {********************************************************************************************************************}
     {if !$contributionMode}
       {* Cancellation / Refunded fields are hidden unless contribution status is set to Cancelled or Refunded*}
