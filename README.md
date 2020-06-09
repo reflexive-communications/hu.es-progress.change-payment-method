@@ -25,7 +25,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl hu.es-progress.change-payment-method@https://github.com/sandorsemsey/hu.es-progress.change-payment-method/archive/master.zip
+cv dl hu.es-progress.change-payment-method@https://gitlab.com/semseysandor/hu.es-progress.change-payment-method/-/archive/master/hu.es-progress.change-payment-method-master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -34,7 +34,7 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/sandorsemsey/hu.es-progress.change-payment-method.git
+git clone https://gitlab.com/semseysandor/hu.es-progress.change-payment-method.git
 cv en change_payment_method
 ```
 
