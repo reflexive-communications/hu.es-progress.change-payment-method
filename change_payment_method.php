@@ -9,7 +9,7 @@ require_once 'change_payment_method.civix.php';
  */
 function change_payment_method_civicrm_config(&$config)
 {
-  _change_payment_method_civix_civicrm_config($config);
+    _change_payment_method_civix_civicrm_config($config);
 }
 
 /**
@@ -19,7 +19,7 @@ function change_payment_method_civicrm_config(&$config)
  */
 function change_payment_method_civicrm_xmlMenu(&$files)
 {
-  _change_payment_method_civix_civicrm_xmlMenu($files);
+    _change_payment_method_civix_civicrm_xmlMenu($files);
 }
 
 /**
@@ -29,7 +29,7 @@ function change_payment_method_civicrm_xmlMenu(&$files)
  */
 function change_payment_method_civicrm_install()
 {
-  _change_payment_method_civix_civicrm_install();
+    _change_payment_method_civix_civicrm_install();
 }
 
 /**
@@ -39,7 +39,7 @@ function change_payment_method_civicrm_install()
  */
 function change_payment_method_civicrm_postInstall()
 {
-  _change_payment_method_civix_civicrm_postInstall();
+    _change_payment_method_civix_civicrm_postInstall();
 }
 
 /**
@@ -49,7 +49,7 @@ function change_payment_method_civicrm_postInstall()
  */
 function change_payment_method_civicrm_uninstall()
 {
-  _change_payment_method_civix_civicrm_uninstall();
+    _change_payment_method_civix_civicrm_uninstall();
 }
 
 /**
@@ -59,7 +59,7 @@ function change_payment_method_civicrm_uninstall()
  */
 function change_payment_method_civicrm_enable()
 {
-  _change_payment_method_civix_civicrm_enable();
+    _change_payment_method_civix_civicrm_enable();
 }
 
 /**
@@ -69,7 +69,7 @@ function change_payment_method_civicrm_enable()
  */
 function change_payment_method_civicrm_disable()
 {
-  _change_payment_method_civix_civicrm_disable();
+    _change_payment_method_civix_civicrm_disable();
 }
 
 /**
@@ -79,7 +79,7 @@ function change_payment_method_civicrm_disable()
  */
 function change_payment_method_civicrm_upgrade($op, CRM_Queue_Queue $queue = null)
 {
-  return _change_payment_method_civix_civicrm_upgrade($op, $queue);
+    return _change_payment_method_civix_civicrm_upgrade($op, $queue);
 }
 
 /**
@@ -92,7 +92,7 @@ function change_payment_method_civicrm_upgrade($op, CRM_Queue_Queue $queue = nul
  */
 function change_payment_method_civicrm_managed(&$entities)
 {
-  _change_payment_method_civix_civicrm_managed($entities);
+    _change_payment_method_civix_civicrm_managed($entities);
 }
 
 /**
@@ -106,7 +106,7 @@ function change_payment_method_civicrm_managed(&$entities)
  */
 function change_payment_method_civicrm_caseTypes(&$caseTypes)
 {
-  _change_payment_method_civix_civicrm_caseTypes($caseTypes);
+    _change_payment_method_civix_civicrm_caseTypes($caseTypes);
 }
 
 /**
@@ -121,7 +121,7 @@ function change_payment_method_civicrm_caseTypes(&$caseTypes)
  */
 function change_payment_method_civicrm_angularModules(&$angularModules)
 {
-  _change_payment_method_civix_civicrm_angularModules($angularModules);
+    _change_payment_method_civix_civicrm_angularModules($angularModules);
 }
 
 /**
@@ -131,7 +131,7 @@ function change_payment_method_civicrm_angularModules(&$angularModules)
  */
 function change_payment_method_civicrm_alterSettingsFolders(&$metaDataFolders = null)
 {
-  _change_payment_method_civix_civicrm_alterSettingsFolders($metaDataFolders);
+    _change_payment_method_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
 
 /**
@@ -143,7 +143,7 @@ function change_payment_method_civicrm_alterSettingsFolders(&$metaDataFolders = 
  */
 function change_payment_method_civicrm_entityTypes(&$entityTypes)
 {
-  _change_payment_method_civix_civicrm_entityTypes($entityTypes);
+    _change_payment_method_civix_civicrm_entityTypes($entityTypes);
 }
 
 /**
@@ -151,7 +151,7 @@ function change_payment_method_civicrm_entityTypes(&$entityTypes)
  */
 function change_payment_method_civicrm_themes(&$themes)
 {
-  _change_payment_method_civix_civicrm_themes($themes);
+    _change_payment_method_civix_civicrm_themes($themes);
 }
 
 /**
@@ -162,9 +162,9 @@ function change_payment_method_civicrm_themes(&$themes)
  */
 function change_payment_method_civicrm_buildForm($formName, &$form)
 {
-  // Process only if form is contribution and form id is set (eg. when editing)
-  if ($formName != 'CRM_Contribute_Form_Contribution' || $form->getVar('_id') == null) {
-    return;
-  };
-  $form->assign("show_payment_method", true);
+    // Process only if form is contribution and form id is set (eg. when editing)
+    if ($formName != 'CRM_Contribute_Form_Contribution' || $form->getVar('_id') == null) {
+        return;
+    };
+    $form->assign("show_payment_method", true);
 }
